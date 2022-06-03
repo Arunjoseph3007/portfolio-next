@@ -19,7 +19,7 @@ const Contact = () => {
             Hey there<b>,</b>
           </span>
           <br />
-          Let's Connect<b>.</b>
+          Let s Connect<b>.</b>
         </Title>
       </Hider>
       <h2>
