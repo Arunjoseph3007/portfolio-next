@@ -12,7 +12,7 @@ import useScrollToTop from "../Utils/useScrollToTop";
 const Contact = () => {
   useScrollToTop()
   return (
-    <MainSections variants={fadeIn} initial="hidden" animate="show" exit="exit">
+    <MainSections  variants={fadeIn} initial="hidden" animate="show" exit="exit">
       <Hider>
         <Title variants={titleAnim} initial="hidden" animate="show" exit="exit">
           <span>
