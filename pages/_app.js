@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 import Nav from "../Components/Nav";
 import Design from "../Components/lookAndFeel/Design";
 import FooterSection from "../Components/Footer";
+import SEO from "../Components/SEO";
 //GLOBAL STYLES
 import GlobalStyle from "../Components/lookAndFeel/GlobalStyle";
 import { StyledCursor } from "../Components/lookAndFeel/ReusableStyles";
@@ -19,37 +20,22 @@ function MyApp({ Component, pageProps, router }) {
         clientY - 25
       }px)`;
     };
-
-    const addClass = () => cursor.current.classList.add("cursorOnA");
-
-    const removeClass = () => cursor.current.classList.remove("cursorOnA");
-
-    const allLinks = document.querySelectorAll("a");
-
     window.addEventListener("mousemove", listener);
-
-    allLinks.forEach((a) => a.addEventListener("mouseover", addClass));
-
-    allLinks.forEach((a) => a.addEventListener("mouseout", removeClass));
 
     return () => {
       window.removeEventListener("mousemove", listener);
-
-      allLinks.forEach((a) => a.removeEventListener("mouseover", addClass));
-
-      allLinks.forEach((a) => a.removeEventListener("mouseout", removeClass));
     };
   }, []);
 
   return (
     <>
       <GlobalStyle />
+      <SEO page={router.pathname} />
       <StyledCursor ref={cursor} />
       <Nav />
       <Design />
       <AnimatePresence exitBeforeEnter initial={false}>
-        {/* <AnimatePresence> */}
-        <Component {...pageProps} key={router} />
+        <Component {...pageProps} key={router.route} />
       </AnimatePresence>
       <Design />
       <FooterSection />

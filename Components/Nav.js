@@ -16,6 +16,8 @@ const Nav = () => {
 
   const handler = () => setIsOpen(false);
 
+  useEffect(handler, [Url]);
+
   useEffect(() => {
     const listener = (event) => {
       if (!navTab.current || navTab.current.contains(event.target)) {
@@ -89,11 +91,7 @@ const Nav = () => {
           <div className={`line ${Url === "/contact" ? "active" : ""}`}></div>
         </li>
       </ul>
-      <ul
-        ref={navTab}
-        style={{ display: isOpen ? "block" : "none" }}
-        className="mob-container"
-      >
+      <MobileNavBar ref={navTab} isOpen={isOpen}>
         <li className="nav-item">
           <Link href="/">
             <a className="nav-link">Home</a>
@@ -114,10 +112,40 @@ const Nav = () => {
             <a className="nav-link">Contacts</a>
           </Link>
         </li>
-      </ul>
+      </MobileNavBar>
     </Navbar>
   );
 };
+
+const MobileNavBar = styled.div`
+  display: ${(props) => (props.isOpen ? "block" : "none")};
+  background-color: black;
+  z-index: 99999;
+  position: fixed;
+  top: 12vh;
+  left: 0;
+  right: 0;
+  list-style: none;
+  border-top: 2px solid #bdbdbd;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    background: linear-gradient(to bottom, black, #00000050);
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }
+  li {
+    display: block;
+    font-size: 2rem;
+    border-bottom: 2px solid #bdbdbd;
+    a {
+      padding: 1rem;
+      display: block;
+    }
+  }
+`;
 
 const Navbar = styled.div`
   width: 100%;
@@ -135,22 +163,6 @@ const Navbar = styled.div`
     letter-spacing: 0.3rem;
     span {
       font-weight: 200;
-    }
-  }
-  .mob-container {
-    background-color: black;
-    z-index: 99999;
-    position: fixed;
-    top: 15vh;
-    left: 0;
-    right: 0;
-    list-style: none;
-    border-top: 2px solid #bdbdbd;
-    li {
-      padding: 1rem;
-      display: block;
-      font-size: 2rem;
-      border-bottom: 2px solid #bdbdbd;
     }
   }
   .nav-container {

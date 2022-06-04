@@ -38,7 +38,9 @@ function AboutMe() {
 const StyledAboutMe = styled(MainSections)`
   height:auto;
   padding-bottom: 3rem;
+  overflow:auto;
   margin-top: 0;
+  margin-bottom: 5rem;
   .containers {
     width: 90%;
     max-width: 800px;

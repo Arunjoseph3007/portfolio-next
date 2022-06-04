@@ -35,6 +35,7 @@ export const StyledCursor = styled.div`
   height: var(--cursor-height);
   background-color: var(--cursor-bg);
   box-shadow:var(--cursor-box-shadow);
+  transform-origin:0% 0%;
   transition: all 1.5s ease, transform 0.05s ease;
   position: fixed;
   aspect-ratio: 1;

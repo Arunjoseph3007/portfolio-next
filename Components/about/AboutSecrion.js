@@ -32,7 +32,7 @@ const AboutSection = () => {
 };
 const CodeSvg = styled(StyledSvg)`
   @media screen and (max-width: 860px){
-    right:-25%
+    right:-25%;
   }
 `;
 export default AboutSection;

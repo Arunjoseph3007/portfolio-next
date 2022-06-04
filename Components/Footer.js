@@ -29,7 +29,7 @@ const FooterSection = () => {
           <h4>LINKS</h4>
           <ul>
             <li>
-              <a href="#">Github</a>
+              <a href="https://github.com/Arunjoseph3007">Github</a>
             </li>
             <li>
               <a href="#">Facebook</a>
@@ -43,7 +43,7 @@ const FooterSection = () => {
           </ul>
         </div>
         <div className="nothing">
-          <h4>Made with React and Strapi, hosted on Netlify</h4>
+          <h4>Made with React and NextJS, hosted on Vercel</h4>
         </div>
       </div>
     </StyledFooter>
@@ -54,6 +54,7 @@ const StyledFooter = styled.footer`
   z-index: 100;
   padding-top: 5rem;
   backdrop-filter: blur(3px);
+  padding-inline: 4rem;
   color: #ffffff;
   box-shadow: 0 0 18px #202020 inset;
   background: #44444428;
@@ -67,7 +68,6 @@ const StyledFooter = styled.footer`
     .links {
       width: 22%;
       height: 60%;
-      // border-right: 2px solid white;
     }
     height: 100%;
     width: 100%;
@@ -88,10 +88,14 @@ const StyledFooter = styled.footer`
     }
     .pages,
     .links {
+      text-align: center;
       font-size: 3rem;
       padding-top: 3rem;
       h4 {
         margin-bottom: 2.5rem;
+      }
+      ul{
+        list-style: none !important;
       }
       li a {
         font-size: 2rem;
