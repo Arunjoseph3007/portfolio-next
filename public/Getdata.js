@@ -1,4 +1,4 @@
-import shareMe from './assets/shareMe.png'
+import shareMe from './assets/shareMe.PNG'
 import celloAPI from './assets/celloAPI.PNG';
 import celloSVG from './assets/celloSVG.PNG';
 
