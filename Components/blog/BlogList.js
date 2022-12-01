@@ -2,14 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import BlogItem from "./ListItem";
 import { MainSections, SecTitle } from "../lookAndFeel/ReusableStyles";
-import { AllPosts } from "../../public/Getdata";
 
-const BlogList = () => {
+const BlogList = ({AllPosts}) => {
   return (
     <StyledBlogList>
       <SecTitle style={{ marginBottom: "6rem" }}>
         You may like this<b>.</b>
       </SecTitle>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       {AllPosts.map((post) => (
         <BlogItem key={post.id} data={post} />
       ))}

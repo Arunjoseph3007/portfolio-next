@@ -1,14 +1,15 @@
 import React from "react";
 import { List, StyledListItem } from "../lookAndFeel/ReusableStyles";
 import Link from "next/link";
+import Image from "next/image";
 
 const BlogItem = ({ data }) => {
   return (
     <StyledListItem>
-      <img src={data.image} alt="blog cover" />
+      <img src={data.image} alt="blog cover"/>
       <div className="info">
         <h2>
-          <Link href={`/blog/${data.filename}`}>
+          <Link href={`/blog/${data.id}`}>
             <a>{data.title}</a>
           </Link>
         </h2>

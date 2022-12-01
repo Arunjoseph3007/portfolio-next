@@ -34,8 +34,8 @@ export const StyledSvg = styled.svg`
 export const StyledCursor = styled.div`
   height: var(--cursor-height);
   background-color: var(--cursor-bg);
-  box-shadow:var(--cursor-box-shadow);
-  transform-origin:0% 0%;
+  box-shadow: var(--cursor-box-shadow);
+  transform-origin: 0% 0%;
   transition: all 1.5s ease, transform 0.05s ease;
   position: fixed;
   aspect-ratio: 1;
@@ -116,12 +116,12 @@ export const MarkdownSection = styled(MainSections)`
     margin-block: 1rem;
   }
   .write {
-    width:95%;
+    width: 95%;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    & > *{
+    & > * {
       line-height: 1.8rem;
       list-style: square;
     }
@@ -139,11 +139,11 @@ export const StyledListItem = styled.div`
   width: 100%;
   max-width: 1050px;
   margin: 3rem;
-  border-radius: 7px;
+  border-radius: 5px;
   border: 2px solid grey;
   display: flex;
-  justify-content: center;
-  padding: 2rem 2rem;
+  justify-content: spaced-between;
+  padding: 2rem;
   .link {
     display: block;
     color: #23d997;
@@ -156,8 +156,8 @@ export const StyledListItem = styled.div`
   }
   img {
     width: 100%;
-    max-width: 500px;
-    aspect-ratio: 1.8;
+    max-width: 300px;
+    aspect-ratio: 16/9;
     border-radius: 5px;
     object-fit: contain;
   }
@@ -165,9 +165,9 @@ export const StyledListItem = styled.div`
     padding: 0 2rem;
     h2 {
       font-size: 2.1rem;
-      a{
+      a {
         text-transform: uppercase;
-        letter-spacing: .4rem;
+        letter-spacing: 0.4rem;
       }
     }
     .dotted {
@@ -182,6 +182,7 @@ export const StyledListItem = styled.div`
     flex-direction: column;
     img {
       margin-bottom: 2rem;
+      max-width:1000px;
     }
     .info {
       padding: 0;
