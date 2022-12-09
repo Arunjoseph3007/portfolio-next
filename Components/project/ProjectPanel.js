@@ -19,7 +19,7 @@ const ProjectPanel = ({ project, index }) => {
         <h1>
           <span>{`0${index + 1}`}</span>
           <br />
-          {project.title.split(" ")[0].toUpperCase()}
+          {project.title.split(" ").shift().toUpperCase()}
           <br />
           {project.title.split(" ").slice(1).join(" ").toUpperCase()}
         </h1>
@@ -40,7 +40,7 @@ const ProjectPanel = ({ project, index }) => {
           Visit the site here &rarr;
         </a>
         <div className="grid">
-          {[1, 2, 3, 4, 5, 6].map((elm, i) => (
+          {[1, 2, 3, 4, 5, 6].map((i) => (
             <div key={i}>
               <Image src={project.image} alt="project" />
             </div>
@@ -157,13 +157,13 @@ const StyledProject = styled.div`
   }
   @media screen and (max-width: 860px) {
     grid: auto/1fr;
-    gap:10rem;
+    gap: 10rem;
     .l-tab {
       &::before {
         content: "";
         position: absolute;
         bottom: -50%;
-        left:-5%;
+        left: -5%;
         background: linear-gradient(to bottom, black, transparent);
         width: 100vw;
         height: 50%;

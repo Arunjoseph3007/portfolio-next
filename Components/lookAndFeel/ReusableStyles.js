@@ -106,14 +106,19 @@ export const MarkdownSection = styled(MainSections)`
   height: auto;
   text-align: justify;
   font-size: 1.3rem;
+  margin-bottom: 8rem;
+  overflow: hidden;
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    text-align: center;
     margin-block: 1rem;
+    font-weight: bold;
+  }
+  img {
+    width:800px;
   }
   .write {
     width: 95%;
@@ -125,7 +130,6 @@ export const MarkdownSection = styled(MainSections)`
       line-height: 1.8rem;
       list-style: square;
     }
-    color: #23d997;
     line-height: 2rem;
     code {
       padding: 1rem;

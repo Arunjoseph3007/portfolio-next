@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <GlobalStyle />
-      <SEO page={router.pathname} />
+      <SEO page={router.asPath} />
       <StyledCursor ref={cursor} />
       <Nav />
       <Design />

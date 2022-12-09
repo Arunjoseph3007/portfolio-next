@@ -12,33 +12,35 @@ function AboutMe() {
         <h2>Presently</h2>
         <Line />
         <p>
-          Learning Computer Science  /  Student at DJ Sanghvi College (Bachelors in Computer Science)
-           /  
+          Learning Computer Science / Student at DJ Sanghvi College (Bachelors
+          in Computer Science) /
         </p>
       </div>
       <div className="containers personally">
         <h2>Personally</h2>
         <Line />
         <p>
-          Loves to code  /  Keen about maths / Man United Fan  /  Football is Life
-           /  Enjoy Learning  /  Love to be a Teacher someday  /  Music Lover  /  
-          Self taught Music producer (Just a little bit)  /  Loves Creating stuff  /  
+          Loves to code / Keen about maths / Man United Fan / Football is Life /
+          Enjoy Learning / Love to be a Teacher someday / Music Lover / Self
+          taught Music producer (Just a little bit) / Loves Creating stuff /
         </p>
       </div>
       <div className="containers profesionaly">
         <h2>Professionally</h2>
         <Line />
         <p>
-          Web Developer / Front End Development Using React / Dabbles in the backend with MERN Stack / Firebase And Firestore / 
+          Full stack Web Developer / Front End Development Using React /Backend Dev in
+          Express / also Dabbles in the MERN Stack / Firebase And Firestore /
+          Mobile App Development using React Native
         </p>
       </div>
     </StyledAboutMe>
   );
 }
 const StyledAboutMe = styled(MainSections)`
-  height:auto;
+  height: auto;
   padding-bottom: 3rem;
-  overflow:auto;
+  overflow: auto;
   margin-top: 0;
   margin-bottom: 5rem;
   .containers {

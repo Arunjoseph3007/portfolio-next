@@ -9,11 +9,6 @@ const BlogList = ({AllPosts}) => {
       <SecTitle style={{ marginBottom: "6rem" }}>
         You may like this<b>.</b>
       </SecTitle>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       {AllPosts.map((post) => (
         <BlogItem key={post.id} data={post} />
       ))}
@@ -21,6 +16,7 @@ const BlogList = ({AllPosts}) => {
   );
 };
 const StyledBlogList = styled(MainSections)`
+  height:200vh;
   padding-top: 0rem;
   padding-bottom: 6rem;
   display: flex;
