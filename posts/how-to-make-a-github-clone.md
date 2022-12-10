@@ -2,13 +2,13 @@
 title: 'How to make a Github clone'
 description: 'In This Blog I will show you how I built my own version of Github.'
 date: '2020-01-02'
-image: 'http://gitbase.sytes.net/banner.jpg'
+image: 'https://raw.githubusercontent.com/Arunjoseph3007/github-clone-frontend/main/public/banner.jpg'
 tags: ['abcd']
 ---
 
 In This Blog I will show you how I built my own version of Github. First of all, if you guy want to check it out it is available [here](http://gitbase.sytes.net).
 
-![Gitbase](http://gitbase.sytes.net/banner.jpg)
+![Gitbase](https://raw.githubusercontent.com/Arunjoseph3007/github-clone-frontend/main/public/banner.jpg)
 
 Now Let me talk a bit about the functionality. Any registered user can
 

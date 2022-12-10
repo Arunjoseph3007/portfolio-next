@@ -5,6 +5,7 @@ import { MainSections, Title, Line } from "../lookAndFeel/ReusableStyles";
 function AboutMe() {
   return (
     <StyledAboutMe>
+      
       <Title>
         about me<b>.</b>
       </Title>
