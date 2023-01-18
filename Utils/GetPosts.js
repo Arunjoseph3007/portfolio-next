@@ -16,6 +16,7 @@ export function getAllPostIds() {
     };
   });
 }
+
 export function getSortedPostsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);

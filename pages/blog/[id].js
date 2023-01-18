@@ -22,7 +22,7 @@ function BlogPage({ postData: post }) {
           }}
         >
           <Title>
-            <span>Blog {post.id + 1}</span>
+            <span>Blog {1}</span>
             <br />
             {post.title}
             <b>.</b>

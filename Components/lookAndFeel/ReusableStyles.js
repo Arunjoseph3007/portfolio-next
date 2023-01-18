@@ -5,12 +5,30 @@ export const Hider = styled.div`
   overflow: hidden;
 `;
 
+export const HandWrittenText = styled.p`
+  margin-top: 1rem;
+  font-family: "Amatic SC", "Source Code Pro", monospace;
+  font-weight: light;
+  font-size: 2.5rem;
+  color: gray;
+`;
+
+export const BigText = styled(motion.h1)`
+  margin-top: 4rem;
+  letter-spacing: -0.2rem;
+  font-size: 6.7rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  z-index: 999;
+  color: #fffffff0;
+`;
+
 export const MainSections = styled(motion.div)`
   transition: all 0.3s ease;
   width: 100vw;
-  height: 75vh;
+  min-height: 75vh;
   position: relative;
-  padding: 0rem 5rem;
+  padding: 0rem 7rem;
   padding-top: 8.5rem;
   overflow-x: hidden;
   color: #dfdfdf;
@@ -118,7 +136,7 @@ export const MarkdownSection = styled(MainSections)`
     font-weight: bold;
   }
   img {
-    width:800px;
+    width: 800px;
   }
   .write {
     width: 95%;
@@ -186,7 +204,7 @@ export const StyledListItem = styled.div`
     flex-direction: column;
     img {
       margin-bottom: 2rem;
-      max-width:1000px;
+      max-width: 1000px;
     }
     .info {
       padding: 0;

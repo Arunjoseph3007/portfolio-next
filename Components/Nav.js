@@ -154,7 +154,7 @@ const Navbar = styled.div`
   display: flex;
   align-items: center;
   height: 15vh;
-  padding: 0rem 5rem;
+  padding: 0rem 7rem;
   justify-content: space-between;
   position: relative;
   h1 {

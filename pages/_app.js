@@ -33,11 +33,11 @@ function MyApp({ Component, pageProps, router }) {
       <SEO page={router.asPath} />
       <StyledCursor ref={cursor} />
       <Nav />
-      <Design />
+      {/* <Design /> */}
       <AnimatePresence exitBeforeEnter initial={false}>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
-      <Design />
+      {/* <Design /> */}
       <FooterSection />
     </>
   );

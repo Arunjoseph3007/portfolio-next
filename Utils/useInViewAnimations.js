@@ -8,7 +8,6 @@ export const useInViewAnimation = ({ threshold = 0.75 }) => {
 
   useEffect(() => {
     if (elementInView) {
-      console.log('hey')
       controls.start("show");
     }
   }, [controls, elementInView, element]);

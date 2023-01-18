@@ -6,7 +6,6 @@ export const useClickOutside = ({ handler, elmRef }) => {
       if (!elmRef?.current || elmRef?.current.contains(event.target)) {
         return;
       }
-      console.log("hey")
       handler(event);
     };
     document.addEventListener("mousedown", listener);

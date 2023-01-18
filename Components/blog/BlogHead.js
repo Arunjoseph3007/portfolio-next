@@ -12,7 +12,7 @@ const BlogHead = () => {
   return (
     <MainSections variants={fadeIn} initial="hidden" animate="show" exit="exit">
       <Hider>
-        <Title variants={titleAnim} initial="hidden" animate="show" exit="exit">
+        <Title variants={titleAnim}>
           <span>
             Welcome to<b>,</b>
           </span>
