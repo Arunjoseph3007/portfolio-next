@@ -21,6 +21,9 @@ export const BigText = styled(motion.h1)`
   text-transform: uppercase;
   z-index: 999;
   color: #fffffff0;
+  @media screen and (max-width: 860px) {
+    font-size: 5rem;
+  }
 `;
 
 export const MainSections = styled(motion.div)`
@@ -29,20 +32,29 @@ export const MainSections = styled(motion.div)`
   min-height: 75vh;
   position: relative;
   padding: 0rem 7rem;
-  padding-top: 8.5rem;
+  padding-bottom: 1.5rem;
   overflow-x: hidden;
   color: #dfdfdf;
   display: flex;
   margin-top: 0;
   padding-top: 100px;
+  & div:first-child {
+    padding-bottom: 3rem;
+    width: 100%;
+  }
   @media screen and (max-width: 860px) {
-    padding: 0rem 2rem;
-    margin-top: 12rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5rem;
   }
 `;
 
 export const SvgContainer = styled.div`
   width: 30%;
+  @media screen and (max-width: 860px) {
+    width: 80%;
+  }
 `;
 
 export const StyledCursor = styled.div`
