@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
+        cursor:none;
         box-sizing:border-box;
         scrollbar-width: thin;
         scrollbar-color: grey;

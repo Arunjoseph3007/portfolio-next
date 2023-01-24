@@ -16,7 +16,7 @@ export const HandWrittenText = styled.p`
 export const BigText = styled(motion.h1)`
   margin-top: 4rem;
   letter-spacing: -0.2rem;
-  font-size: 6.7rem;
+  font-size: 6rem;
   font-weight: bolder;
   text-transform: uppercase;
   z-index: 999;
@@ -32,21 +32,17 @@ export const MainSections = styled(motion.div)`
   padding-top: 8.5rem;
   overflow-x: hidden;
   color: #dfdfdf;
+  display: flex;
+  margin-top: 0;
+  padding-top: 100px;
   @media screen and (max-width: 860px) {
     padding: 0rem 2rem;
     margin-top: 12rem;
   }
 `;
 
-export const StyledSvg = styled.svg`
-  position: absolute;
-  right: 0%;
-  top: 20%;
-  z-index: 999;
-  @media screen and (max-width: 860px) {
-    transform: scale(0.6);
-    top: 30%;
-  }
+export const SvgContainer = styled.div`
+  width: 30%;
 `;
 
 export const StyledCursor = styled.div`

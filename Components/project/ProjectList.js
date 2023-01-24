@@ -20,6 +20,7 @@ const ProjectList = () => {
 
 const StyledBlogList = styled(MainSections)`
   padding-top: 0rem;
+  margin-top: 6rem;
   padding-bottom: 6rem;
   display: block;
   height: auto;

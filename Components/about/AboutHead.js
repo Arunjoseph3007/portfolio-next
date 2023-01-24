@@ -7,25 +7,24 @@ import {
   BigText,
   SvgContainer,
 } from "../lookAndFeel/ReusableStyles";
-import WritingSvg from "../../public/writing.svg";
+import PersonSvg from "../../public/person.svg";
 import Image from "next/image";
 
-const BlogHead = () => {
+const AboutHead = () => {
   return (
     <MainSections variants={fadeIn} initial="hidden" animate="show" exit="exit">
       <Hider style={{ flex: 1 }}>
-        <HandWrittenText>blog /</HandWrittenText>
+        <HandWrittenText>home /</HandWrittenText>
         <BigText variants={titleAnim}>
-          Knowledge <br />
-          is power.
+          I am Arun <br />I 🤍 Learning.
         </BigText>
-        <HandWrittenText>Have a read.</HandWrittenText>
+        <HandWrittenText>Hey, Glad to meet you.</HandWrittenText>
       </Hider>
       <SvgContainer>
-        <Image src={WritingSvg} alt="person-with-board" />
+        <Image src={PersonSvg} alt="codes-illustration" />
       </SvgContainer>
     </MainSections>
   );
 };
 
-export default BlogHead;
+export default AboutHead;
