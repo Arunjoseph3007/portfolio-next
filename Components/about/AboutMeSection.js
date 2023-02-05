@@ -5,7 +5,6 @@ import { MainSections, Title, Line } from "../lookAndFeel/ReusableStyles";
 function AboutMe() {
   return (
     <StyledAboutMe>
-      
       <Title>
         about me<b>.</b>
       </Title>
@@ -14,7 +13,7 @@ function AboutMe() {
         <Line />
         <p>
           Learning Computer Science / Student at DJ Sanghvi College (Bachelors
-          in Computer Science) /
+          in Computer Science) / Intern at Mastork Technologies
         </p>
       </div>
       <div className="containers personally">
@@ -30,9 +29,10 @@ function AboutMe() {
         <h2>Professionally</h2>
         <Line />
         <p>
-          Full stack Web Developer / Front End Development Using React /Backend Dev in
-          Express / also Dabbles in the MERN Stack / Firebase And Firestore /
-          Mobile App Development using React Native
+          Full stack Web Developer / Front End Development Using React /Backend
+          Dev in Express / also Dabbles in the MERN Stack / Firebase And
+          Firestore / Mobile App Development using React Native / Expertise in
+          designing and figuring out systems
         </p>
       </div>
     </StyledAboutMe>
@@ -42,6 +42,8 @@ const StyledAboutMe = styled(MainSections)`
   height: auto;
   padding-bottom: 3rem;
   overflow: auto;
+  flex-direction: column;
+  align-items: start;
   margin-top: 0;
   margin-bottom: 5rem;
   .containers {

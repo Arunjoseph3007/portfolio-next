@@ -1,7 +1,6 @@
 import React from "react";
 import { List, StyledListItem } from "../lookAndFeel/ReusableStyles";
 import Link from "next/link";
-import Image from "next/image";
 
 const BlogItem = ({ data }) => {
   return (

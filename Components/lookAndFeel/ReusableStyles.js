@@ -170,7 +170,7 @@ export const StyledListItem = styled.div`
   max-width: 1050px;
   margin: 3rem;
   border-radius: 5px;
-  border: 2px solid grey;
+  background-color: rgb(10, 10, 10);
   display: flex;
   justify-content: spaced-between;
   padding: 2rem;

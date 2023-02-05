@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-const arr = [];
-for (let i = 0; i < 50; i++) arr.push(i);
-
+// eslint-disable-next-line react/display-name
 const Design = React.memo(() => {
   return (
     <StyledDesign>
-      {arr.map((elm) => (
-        <Dot key={elm} />
-      ))}
+      {[...new Array(25)]
+        .map((a, i) => i)
+        .map((elm) => (
+          <Dot key={elm} />
+        ))}
     </StyledDesign>
   );
 });

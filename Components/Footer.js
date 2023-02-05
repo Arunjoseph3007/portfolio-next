@@ -2,53 +2,66 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-const FooterSection = () => {
-  return (
-    <StyledFooter>
-      <div className="footer-content">
-        <div className="pages">
-          <h4>PAGES</h4>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog"><a>Blog</a></Link>
-            </li>
-            <li>
-              <Link href="/projects"><a>Projects</a></Link>
-            </li>
-            <li>
-              <Link href="/contact"><a>Contact</a></Link>
-            </li>
-          </ul>
-        </div>
-        <div className="links">
-          <h4>LINKS</h4>
-          <ul>
-            <li>
-              <a href="https://github.com/Arunjoseph3007">Github</a>
-            </li>
-            <li>
-              <a href="#">Facebook</a>
-            </li>
-            <li>
-              <a href="#">Codepen</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div className="nothing">
-          <h4>Made with React and NextJS, hosted on Vercel</h4>
-        </div>
+const FooterSection = () => (
+  <StyledFooter>
+    <div className="footer-content">
+      <div className="pages">
+        <h4>PAGES</h4>
+        <ul>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/projects">
+              <a>Projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
+          </li>
+        </ul>
       </div>
-    </StyledFooter>
-  );
-};
+      <div className="links">
+        <h4>LINKS</h4>
+        <ul>
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/Arunjoseph3007"
+            >
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/arun-joseph-4084b1218/"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="nothing">
+        <h4>Made with React and NextJS, hosted on Vercel</h4>
+      </div>
+    </div>
+  </StyledFooter>
+);
 
 const StyledFooter = styled.footer`
   z-index: 100;
@@ -56,8 +69,7 @@ const StyledFooter = styled.footer`
   backdrop-filter: blur(3px);
   padding-inline: 4rem;
   color: #ffffff;
-  box-shadow: 0 0 18px #202020 inset;
-  background: #44444428;
+  background: #44444415;
   min-height: 50vh;
   width: 100%;
   h4 {
@@ -94,7 +106,7 @@ const StyledFooter = styled.footer`
       h4 {
         margin-bottom: 2.5rem;
       }
-      ul{
+      ul {
         list-style: none !important;
       }
       li a {

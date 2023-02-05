@@ -53,6 +53,7 @@ const ProjectPanel = ({ project, index }) => {
 
 const StyledProject = styled.div`
   display: grid;
+  gap: 5rem;
   grid: auto / 1fr 1.3fr;
   height: 250vh;
   .l-tab {
@@ -63,7 +64,7 @@ const StyledProject = styled.div`
     background: black;
     z-index: 101;
     h1 {
-      font-size: 7rem;
+      font-size: 6rem;
       color: gray;
       padding-top: 2.5rem;
       padding-left: 2rem;

@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 //COMPONENTS
 import Nav from "../Components/Nav";
 import Design from "../Components/lookAndFeel/Design";
-import FooterSection from "../Components/Footer";
+import Footer from "../Components/Footer";
 import SEO from "../Components/SEO";
 //GLOBAL STYLES
 import GlobalStyle from "../Components/lookAndFeel/GlobalStyle";
@@ -33,12 +33,11 @@ function MyApp({ Component, pageProps, router }) {
       <SEO page={router.asPath} />
       <StyledCursor ref={cursor} />
       <Nav />
-      {/* <Design /> */}
       <AnimatePresence exitBeforeEnter initial={false}>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
-      {/* <Design /> */}
-      <FooterSection />
+      <Design />
+      <Footer />
     </>
   );
 }
